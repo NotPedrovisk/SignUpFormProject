@@ -1,1 +1,1 @@
-alert("sus")
+console.log("sus")
