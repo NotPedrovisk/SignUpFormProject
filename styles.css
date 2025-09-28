@@ -16,3 +16,13 @@ html{
 body{
     background-color: wheat;
 }
+
+.mainContainer{
+    display:flex;
+    
+}
+
+
+#bgPic{
+    max-width: 50%;
+}
