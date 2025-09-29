@@ -15,6 +15,9 @@ html{
 
 body{
     background-color: wheat;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .mainContainer{
@@ -23,6 +26,24 @@ body{
 }
 
 
-#bgPic{
-    max-width: 50%;
+.imgArea{
+    display: flex;
+    position:absolute;
+    height: 100vh;
+
+}
+
+#logoTxt{
+    color: white;
+    position: absolute;
+    text-align: center;
+    align-self:end;
+    left:20%
+    
+}
+
+
+
+a:link, a:visited{
+    color: white;
 }
