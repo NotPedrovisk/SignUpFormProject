@@ -1,8 +1,8 @@
 @font-face{
     font-family:"Cantarell";
     src:
-        url(fonts/Cantarell-Regular.woff2) format(woff2),
-        url(fonts/Cantarell-Regular.woff) format(woff);
+        url(fonts/Cantarell-Regular.woff2) format("woff2"),
+        url(fonts/Cantarell-Regular.woff) format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,27 +17,48 @@ body{
     background-color: wheat;
     margin: 0;
     padding: 0;
+    display: flex;
+    
+
     
 }
 
-.mainContainer{
-    display:flex;
-    
-}
+
+
 
 
 .imgArea{
     display: flex;
-    position:fixed;
+    position:relative;
     height: 100vh;
-
+    width: 40vw;
+    
 }
 
+#bgPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#logo{
+    display: flex;
+    position: absolute;
+    height: 20%;
+    left: 15%;
+    top: 27%;
+    
+}
+
+#blackBar{
+    background-color: black;
+    border: 3px solid red;
+}
 
 #logoText{
     color: white;
     position: absolute;
-    left: 50%;
+    left: 60%;
     top: 30%;
     transform: translate(-50%,-30%);
     font-size: 3rem;
@@ -47,8 +68,8 @@ body{
     color: white;
     position: absolute;
     text-align: center;
-    align-self:end;
     left: 50%;
+    bottom:1%;
     transform: translate(-50%);
     font-size: .8rem;
     
