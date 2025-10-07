@@ -9,8 +9,14 @@
 
 }
 
-html{
+:root{
     font-family:"Cantarell";
+    --light-sky: #0a101f;
+    --dark-sky: #182547;
+    --sun-sky: #e4cab1;
+
+    color: white;
+    
 }
 
 body{
@@ -32,13 +38,13 @@ body{
 .rightArea{
     width: 70vw;
     justify-content: center;
-    background-color: beige;
+    background-color: var(--dark-sky);
     flex-direction: column;
     align-content: center;
 }
 
 #formZone{
-    background-color:bisque;
+    background-color:var(--light-sky);
     display: flex;
     padding: 20px;
     
@@ -51,13 +57,11 @@ fieldset{
     width: 100%;
     display: flex;
     flex-direction: column;
-    ;
-
-}
-
-#createBtn{
     
+
 }
+
+
 
 .imgArea{
     position:relative;
@@ -107,8 +111,23 @@ fieldset{
     
 }
 
-.login>span{
-    color:blue
+.rightTxt>span{
+    color:var(--sun-sky)
+    
+}
+
+.rightTxt, #createBtn{
+    margin:20px 0px 20px 30px
+    
+}
+
+#createBtn{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 13rem;
+    box-shadow: none;
 }
 
 a:link, a:visited{
