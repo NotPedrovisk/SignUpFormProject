@@ -33,26 +33,39 @@
             <div>Lets Start!</div>
 
             <form id="formZone" action="#">
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" placeholder="Joseph...">
+                <fieldset>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Joseph...">
 
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Mangoe...">
+                    <label for="user_mail">Email:</label>
+                    <input type="email" name="user_mail" id="user_mail">
 
-                <label for="user_mail">Email:</label>
-                <input type="email" name="user_mail" id="user_mail">
+                    <label for="user_pass">Password:</label>
+                    <input type="password" name="user_pass" id="user_pass">
 
-                <label for="user_phone">Phone Number:</label>
-                <input type="tel" name="user_phone" id="user_phone">
 
-                <label for="user_pass">Password:</label>
-                <input type="password" name="user_pass" id="user_pass">
+                    
+                </fieldset>
+                
 
-                <label for="user_passConf">Comfirm Password:</label>
-                <input type="password" name="user_passConf" id="user_passConf">
+                <fieldset>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Mangoe...">
 
-                <button type="submit">Create Account</button>
+                    <label for="user_phone">Phone Number:</label>
+                    <input type="tel" name="user_phone" id="user_phone">
+
+                     <label for="user_passConf">Comfirm Password:</label>
+                    <input type="password" name="user_passConf" id="user_passConf">
+            
+                </fieldset>
+
+                    
+                   
+
+                
             </form>
+            <button type="submit" id="createBtn">Create Account</button>
             <div class="login">Already have an account? <span>Log In</span></div>
 
 

@@ -30,19 +30,32 @@ body{
 
 
 .rightArea{
+    width: 70vw;
+    justify-content: center;
     background-color: beige;
     flex-direction: column;
     align-content: center;
-    
-    border: 3px solid red;
 }
 
 #formZone{
     background-color:bisque;
-    align-content: center;
-    justify-content: center ;
+    display: flex;
+    padding: 20px;
     
+
     
+}
+
+fieldset{
+    border: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    ;
+
+}
+
+#createBtn{
     
 }
 
@@ -100,4 +113,12 @@ body{
 
 a:link, a:visited{
     color: white;
+}
+
+input,label{
+    max-width: 50%;
+}
+
+input{
+    margin-bottom: 20px;
 }
