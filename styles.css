@@ -33,7 +33,7 @@
 }
 
 body{
-    background-color: wheat;
+    background-color: var(--dark-sky);
     margin: 0;
     padding: 0;
     display: flex;
