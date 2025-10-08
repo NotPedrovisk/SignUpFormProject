@@ -141,6 +141,17 @@ fieldset{
     
 }
 
+/* Displays password validation for user */
+input[type="password"]:invalid{
+    border-color: red;
+    background-color: rgba(128, 0, 0, 0.356);
+}
+
+input[type="password"]:valid{
+    border-color: green;
+    background-color: rgba(0, 128, 0, 0.356);
+}
+
 a:link, a:visited{
     color: white;
 }
@@ -151,4 +162,9 @@ input,label{
 
 input{
     margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.541);
+    background-color: var(--light-sky);
+    border-radius: 4px;
+    color: white;
+    
 }
