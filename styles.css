@@ -15,8 +15,21 @@
     --dark-sky: #182547;
     --sun-sky: #e4cab1;
 
+    --valid-green:rgba(0, 128, 0, 0.356);
+    --invalid-red: rgba(128, 0, 0, 0.356);
+
     color: white;
     
+}
+
+@keyframes toRed{
+    from{background-color:var(--light-sky);}
+    to{background-color: var(--invalid-red);}
+}
+
+@keyframes toGreen{
+    from{background-color:var(--light-sky);}
+    to{background-color: var(--valid-green);}
 }
 
 body{
@@ -142,14 +155,18 @@ fieldset{
 }
 
 /* Displays password validation for user */
-input[type="password"]:invalid{
+input:user-invalid{
     border-color: red;
-    background-color: rgba(128, 0, 0, 0.356);
+    animation-name: toRed;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-input[type="password"]:valid{
+input:user-valid{
     border-color: green;
-    background-color: rgba(0, 128, 0, 0.356);
+    animation-name: toGreen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 a:link, a:visited{
