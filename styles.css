@@ -31,7 +31,7 @@ body{
 }
 .mainContainer{
     display: flex;
-    
+
 }
 
 
@@ -123,13 +123,13 @@ fieldset{
 }
 
 .rightTxt>span{
-    color:var(--sun-sky)
+    color:var(--sun-sky);
     
 }
 
 .rightTxt, #createBtn{
-    margin:20px 0px 20px 30px
-    
+    margin:20px 0px 20px 30px;
+    font-size: 1.2rem;
 }
 
 #createBtn{
